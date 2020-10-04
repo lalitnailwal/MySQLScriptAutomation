@@ -86,6 +86,9 @@ try
     cd ..
     cd ..
 
+    git add .
+    git commit -m "Version management"
+    git push origin master
 
 }
 catch
