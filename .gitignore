@@ -1,0 +1,7 @@
+DatabaseBackup/*.sql
+DatabaseBackup/*.log
+SqlScriptsArchive/*
+!SqlScriptsArchive/dummy.txt
+SqlScripts/*
+!SqlScripts/dummy.txt
+!SqlScripts/1.1.1

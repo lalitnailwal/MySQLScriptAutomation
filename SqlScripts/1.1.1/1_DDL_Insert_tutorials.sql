@@ -1,0 +1,1 @@
+Insert into tutorials_tbl (tutorial_title, tutorial_author, submission_date) values ('learn linux','lalit',CURDATE());
