@@ -88,7 +88,7 @@ try
 
     git add .
     git commit -m "Version management"
-    git push origin master
+    git push origin master -q
 
 }
 catch
