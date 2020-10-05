@@ -1,5 +1,6 @@
 DatabaseBackup/*.sql
 DatabaseBackup/*.log
+DatabaseBackup/*.zip
 #SqlScriptsArchive/*
 #!SqlScriptsArchive/dummy.txt
 #SqlScripts/*
