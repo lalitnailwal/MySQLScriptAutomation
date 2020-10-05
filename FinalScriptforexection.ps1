@@ -39,9 +39,11 @@ $config = $projectPath + "\config.cfg"
 $date = Get-Date 
 $timestamp = "" + $date.day + $date.month + $date.year + "_" + $date.hour + $date.minute 
 $backupfile = $backuppath + $mysql_database + "_" + $timestamp +".sql" 
+$backupzipfile = $backuppath + $mysql_database + "_" + $timestamp +".zip" 
 CD $mysqlpath 
 .\mysqldump.exe --defaults-extra-file=$config --log-error=$errorLog  --result-file=$backupfile --databases $mysql_database
-
+Compress-Archive -Path $backupfile -DestinationPath $backupzipfile 
+Del $backupfile
 #------------------------------------------------------------
 
 
